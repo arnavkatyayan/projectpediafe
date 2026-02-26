@@ -8,7 +8,7 @@ function App() {
 
   return (
     
-     <p className="text-cyan-200">Hello from ProjectPedia!</p>
+     <p className="text-cyan-200">Hello from ProjectPedi!</p>
   )
 }
 
