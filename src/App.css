@@ -40,3 +40,101 @@
 .read-the-docs {
   color: #888;
 }
+.header {
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  height: 10vh;
+  width: 100vw;
+  background: linear-gradient(135deg,
+      #d9e2e8,
+      #c3d0d8,
+      #aebdc7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 11px;
+}
+
+.logo {
+  margin-top: -25px;
+  height: 12vh;
+}
+.nav {
+  position: absolute;
+  right:50px;
+  top:31px;
+}
+.nav p {
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav p:hover {
+  font-family: 600;
+  color:white;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 8px 0;
+  min-width: 120px;
+  z-index: 999;
+}
+
+.dropdown-content p {
+  padding: 8px 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown-content p:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.body {
+  position: relative;
+  top:10vh;
+  height:65vh;
+  max-height: 90vh;
+}
+.footer {
+  position:absolute;
+  bottom:0;
+  height: 10vh;
+  width: 100vw;
+ background: linear-gradient(
+    135deg,
+    #d9e2e8,
+    #c3d0d8,
+    #aebdc7
+  );
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  left:0;
+}
+.github-btn {
+  width: 8vw;
+  margin-top:-15px;
+}
+.home-page {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
