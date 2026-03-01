@@ -98,9 +98,10 @@
   cursor: pointer;
 }
 
-.dropdown-content p:hover {
+ .dropdown-content p:hover {
   background-color: #f2f2f2;
-}
+  color:black;
+} 
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -137,4 +138,50 @@
   height: 100vh;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.typewriter {
+  color: lightgrey;
+  font-size: x-large;
+  font-weight: 600;
+  position: absolute;
+  top: 10vh;
+  font-family: auto;
+}
+.box {
+  height: 51vh;
+  width: 19vw;
+  background: linear-gradient(135deg, #3a6073, #5f8fa3, #8fbac8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding:5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: lightgray;
+}
+.box h2,p {
+  animation: box 10s ease-in-out;
+}
+.box:hover {
+  cursor: pointer;
+   transform: translateY(-8px) scale(1.02); 
+}
+.featured-projects {
+  position: relative;
+  top:-36px;
+  animation: box 5s ease-in-out;
+}
+@keyframes box {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
