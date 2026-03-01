@@ -8,6 +8,8 @@ import HomePage from './HomePage'
 import { Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Github from './assets/github.png'
+import { FaGithub, FaLink } from "react-icons/fa";
+
 function App() {
   
   const navigation = (path) => {  
@@ -29,23 +31,31 @@ function App() {
             <p onClick={()=>navigation("/fullstack")}>Full Stack</p>
           </div>
         </div>
-         <div className="dropdown">
+         {/* <div className="dropdown">
           <p className="dropbtn">Resume</p>
           <div className="dropdown-content">
             <p onClick={()=>navigation("/frontend")}>View</p>
             <p onClick={()=>navigation("/fullstack")}>Download</p>
               <p onClick={() => window.open("https://visualresumearnavk2025.vercel.app/", "_blank")}>Portfolio</p>
           </div>
-        </div>
+        </div> */}
           {/* <p onClick={()=>navigation("/resume")}>Resume</p> */}
           {/* <img src={Github} alt="GitHub Logo" className='github-logo' /> */}
+          <Button
+            variant="success"
+            onClick={() => window.open("https://visualresumearnavk2025.vercel.app/", "_blank")}
+            className='github-btn'
+          >
+            <FaLink size={20} className='btn-icons'/> Portfolio
+          </Button>  
           <Button
             variant="dark"
             onClick={() => window.open("https://github.com/arnavkatyayan", "_blank")}
             className='github-btn'
           >
-            GitHub
-          </Button>          </div>
+            <FaGithub size={20} className='btn-icons'/> GitHub
+          </Button>          
+          </div>
         
         </div>
         <div className='body'>

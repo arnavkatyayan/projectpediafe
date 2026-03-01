@@ -1,7 +1,7 @@
 import React from "react";
 import Github from './assets/Background.jpg'
 import Typewriter from "typewriter-effect";
-
+import { Button } from "react-bootstrap";
 function HomePage() {
     return (
         <div className="home-page flex justify-center items-center">
@@ -29,15 +29,19 @@ function HomePage() {
                 <div className="box">
                     <h2>FlexBoard</h2>
                     <p>A todo app for managing your tasks and deadlines.</p>
-                    {/* <Button className=></Button> */}
+                    <Button variant='dark' onClick={()=>navigation('./fullStack/Flexboard')}> FlexBoard Project </Button>
                 </div>
                 <div className="box">
                     <h2>Expensify</h2>
                     <p>An expense tracker to keep track of your expenses.</p>
+                                        <Button className='dark'> Redirect </Button>
+
                 </div>
                 <div className="box">
                     <h2>Portfolio</h2>
                     <p>A portfolio website to showcase your work and skills.</p>
+                                        <Button className='dark'> Redirect </Button>
+
                 </div>
             </div>
         

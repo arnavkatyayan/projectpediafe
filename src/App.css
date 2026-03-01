@@ -159,7 +159,7 @@
   transition: transform 0.3s ease;
   color: lightgray;
 }
-.box h2,p {
+.box h2,.box p {
   animation: box 10s ease-in-out;
 }
 .box:hover {
@@ -184,4 +184,8 @@
   100% {
     opacity: 1;
   }
+}
+.btn-icons {
+  position: fixed;
+  top:33px;
 }
