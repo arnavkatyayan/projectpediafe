@@ -7,7 +7,7 @@ function HomePage() {
         <div className="home-page flex justify-center items-center">
 
             <div className="typewriter">
-            <Typewriter
+                <Typewriter
                     options={{
                         strings: [
                             "Welcome to ProjectPedia.",
@@ -20,31 +20,31 @@ function HomePage() {
                         loop: true,
                         pauseFor: 500,
                         delay: 65,
-                        deleteSpeed: 5,   
+                        deleteSpeed: 5,
                     }}
                 />
-                </div>
+            </div>
             <div className="flex items-center justify-center gap-6 featured-projects">
-                
+
                 <div className="box">
                     <h2>FlexBoard</h2>
                     <p>A todo app for managing your tasks and deadlines.</p>
-                    <Button variant='dark' onClick={()=>navigation('./fullStack/Flexboard')}> FlexBoard Project </Button>
+                    <Button variant='dark' onClick={() => navigation('./fullStack/Flexboard')}> FlexBoard Project </Button>
                 </div>
                 <div className="box">
                     <h2>Expensify</h2>
                     <p>An expense tracker to keep track of your expenses.</p>
-                                        <Button className='dark'> Redirect </Button>
+                    <Button variant='dark' onClick={() => navigation('./fullStack/Expensify')}> Expensify Project </Button>
 
                 </div>
                 <div className="box">
                     <h2>Portfolio</h2>
                     <p>A portfolio website to showcase your work and skills.</p>
-                                        <Button className='dark'> Redirect </Button>
+                    <Button variant='dark' onClick={() => navigation('./fullStack/Portfolio')}> Portfolio Project </Button>
 
                 </div>
             </div>
-        
+
         </div>
     );
 } export default HomePage;
