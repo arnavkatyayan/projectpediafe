@@ -55,7 +55,7 @@ function HomePage() {
                         monthly summaries, visual charts, and secure data storage for personal
                         finance management.
                     </p>
-                    <Button variant="dark" onClick={() => navigation("/fullStack/Expensify")}>
+                    <Button variant="dark" onClick={() => navigation("/fullStack/expensify")}>
                         Expensify Project
                     </Button>
                 </div>

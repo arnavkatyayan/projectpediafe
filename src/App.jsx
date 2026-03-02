@@ -52,7 +52,7 @@ function App() {
       <div className='body'>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/fullstack/Expensify" element={<Expensify />} />
+          <Route path="/fullstack/expensify" element={<Expensify />} />
           {/* <Route path="/frontend" element={<Frontend />} />
         <Route path="/fullstack" element={<FullStack />} />
         <Route path="/resume" element={<Resume />} /> */}
