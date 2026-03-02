@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,6 +43,7 @@
 .read-the-docs {
   color: #888;
 }
+
 .header {
   position: absolute;
   top: 0px;
@@ -58,19 +62,23 @@
   margin-top: -25px;
   height: 12vh;
 }
+
 .nav {
   position: absolute;
-  right:50px;
-  top:31px;
+  right: 50px;
+  top: 31px;
 }
+
 .nav p {
   font-weight: 600;
   cursor: pointer;
 }
+
 .nav p:hover {
   font-family: 600;
-  color:white;
+  color: white;
 }
+
 .dropdown {
   position: relative;
 }
@@ -85,7 +93,7 @@
   top: 25px;
   left: 0;
   background-color: white;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 8px 0;
   min-width: 120px;
@@ -98,38 +106,40 @@
   cursor: pointer;
 }
 
- .dropdown-content p:hover {
+.dropdown-content p:hover {
   background-color: #f2f2f2;
-  color:black;
-} 
+  color: black;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .body {
   position: relative;
-  top:10vh;
-  height:65vh;
+  top: 10vh;
+  height: 65vh;
   max-height: 90vh;
 }
+
 .footer {
-  position:absolute;
-  bottom:0;
+  position: absolute;
+  bottom: 0;
   height: 10vh;
   width: 100vw;
- background: linear-gradient(
-    135deg,
-    #d9e2e8,
-    #c3d0d8,
-    #aebdc7
-  );
+  background: linear-gradient(135deg,
+      #d9e2e8,
+      #c3d0d8,
+      #aebdc7);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  left:0;
+  left: 0;
 }
+
 .github-btn {
   width: 8vw;
-  margin-top:-15px;
+  margin-top: -15px;
 }
+
 .home-page {
   position: fixed;
   left: 0;
@@ -139,6 +149,7 @@
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
 .typewriter {
   color: lightgrey;
   font-size: x-large;
@@ -147,45 +158,56 @@
   top: 10vh;
   font-family: auto;
 }
+
 .box {
-  height: 51vh;
+  height: 25vh;
   width: 19vw;
-  background: linear-gradient(135deg, #3a6073, #5f8fa3, #8fbac8);
+  background: linear-gradient(135deg, #6fa8bf, #9cc7d8, #cfe5ee);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   border: 1px solid grey;
-  padding:5px;
+  padding: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
   color: lightgray;
+  overflow: auto;
 }
-.box h2,.box p {
+
+.box h2,
+.box p {
   animation: box 10s ease-in-out;
 }
+
 .box:hover {
   cursor: pointer;
-   transform: translateY(-8px) scale(1.02); 
+  transform: translateY(-8px) scale(1.02);
 }
+
 .featured-projects {
   position: relative;
-  top:-36px;
+  top: -36px;
   animation: box 5s ease-in-out;
 }
+
 @keyframes box {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0.5;
   }
+
   75% {
     opacity: 0.75;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .btn-icons {
   position: fixed;
-  top:33px;
+  top: 33px;
 }

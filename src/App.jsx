@@ -9,67 +9,59 @@ import { Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Github from './assets/github.png'
 import { FaGithub, FaLink } from "react-icons/fa";
-
+import Expensify from './Expensify'
 function App() {
-  
-  const navigation = (path) => {  
+
+  const navigation = (path) => {
     window.location.href = path;
   }
   return (
     <Router>
-    <div className='header'>
-      <div className='flex'>
-        <img src={Logo} alt="Projectpedia Logo" className='logo' />
-        <h1 className='title'>ProjectPedia</h1>
-      </div>
-      <div className='flex nav justify-center items-center gap-5'>
-          <p onClick={()=>navigation("/")}>Home</p>
-        <div className="dropdown">
-          <p className="dropbtn">Projects</p>
-          <div className="dropdown-content">
-            <p onClick={()=>navigation("/frontend")}>Frontend</p>
-            <p onClick={()=>navigation("/fullstack")}>Full Stack</p>
-          </div>
+      <div className='header'>
+        <div className='flex'>
+          <img src={Logo} alt="Projectpedia Logo" className='logo' />
+          <h1 className='title'>ProjectPedia</h1>
         </div>
-         {/* <div className="dropdown">
-          <p className="dropbtn">Resume</p>
-          <div className="dropdown-content">
-            <p onClick={()=>navigation("/frontend")}>View</p>
-            <p onClick={()=>navigation("/fullstack")}>Download</p>
-              <p onClick={() => window.open("https://visualresumearnavk2025.vercel.app/", "_blank")}>Portfolio</p>
+        <div className='flex nav justify-center items-center gap-5'>
+          <p onClick={() => navigation("/")}>Home</p>
+          <div className="dropdown">
+            <p className="dropbtn">Projects</p>
+            <div className="dropdown-content">
+              <p onClick={() => navigation("/frontend")}>Frontend</p>
+              <p onClick={() => navigation("/fullstack")}>Full Stack</p>
+
+            </div>
           </div>
-        </div> */}
-          {/* <p onClick={()=>navigation("/resume")}>Resume</p> */}
-          {/* <img src={Github} alt="GitHub Logo" className='github-logo' /> */}
           <Button
             variant="success"
             onClick={() => window.open("https://visualresumearnavk2025.vercel.app/", "_blank")}
             className='github-btn'
           >
-            <FaLink size={20} className='btn-icons'/> Portfolio
-          </Button>  
+            <FaLink size={20} className='btn-icons' /> Portfolio
+          </Button>
           <Button
             variant="dark"
             onClick={() => window.open("https://github.com/arnavkatyayan", "_blank")}
             className='github-btn'
           >
-            <FaGithub size={20} className='btn-icons'/> GitHub
-          </Button>          
-          </div>
-        
+            <FaGithub size={20} className='btn-icons' /> GitHub
+          </Button>
         </div>
-        <div className='body'>
+
+      </div>
+      <div className='body'>
         <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* <Route path="/frontend" element={<Frontend />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/fullstack/Expensify" element={<Expensify />} />
+          {/* <Route path="/frontend" element={<Frontend />} />
         <Route path="/fullstack" element={<FullStack />} />
         <Route path="/resume" element={<Resume />} /> */}
-      </Routes>
+        </Routes>
       </div>
-      <div className ='footer flex justify-center items-center flex-col gap-0.5'>
+      <div className='footer flex justify-center items-center flex-col gap-0.5'>
         <p className='font-bold'>Version: 1.0.0</p>
         <p className='font-medium'>© 2026 ProjectPedia. All rights reserved.</p>
-      </div> 
+      </div>
     </Router>
   )
 }
