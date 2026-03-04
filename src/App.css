@@ -150,6 +150,18 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+.body-page {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-height: 80vh;
+  overflow: auto;
+}
+
 .typewriter {
   color: lightgrey;
   font-size: x-large;
@@ -210,4 +222,37 @@
 .btn-icons {
   position: fixed;
   top: 33px;
+}
+
+.project-description {
+  height: 34vh;
+  width: 54vw;
+  background: linear-gradient(135deg, #6fa8bf, #9cc7d8, #cfe5ee);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.reusable-page {
+  /* overflow: auto; */
+}
+
+.image-dimensions {
+  width: 50vw;
+}
+
+.button-dimensions {
+  position: relative;
+  top: 10px;
+}
+
+.project-images {
+  position: relative;
+}
+
+.button-dimensions Button {
+  width: 5vw;
 }

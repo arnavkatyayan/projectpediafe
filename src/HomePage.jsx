@@ -7,7 +7,7 @@ function HomePage() {
     const navigation = useNavigate();
 
     return (
-        <div className="home-page flex justify-center items-center flex-col">
+        <div className="body-page flex justify-center items-center flex-col">
 
             <div className="typewriter">
                 <Typewriter

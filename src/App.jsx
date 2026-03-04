@@ -10,6 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Github from './assets/github.png'
 import { FaGithub, FaLink } from "react-icons/fa";
 import Expensify from './Expensify'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
 
   const navigation = (path) => {
@@ -49,7 +51,7 @@ function App() {
         </div>
 
       </div>
-      <div className='body'>
+      <div className='body-page'>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/fullstack/expensify" element={<Expensify />} />
