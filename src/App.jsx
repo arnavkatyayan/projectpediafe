@@ -16,7 +16,7 @@ import Portfolio from './Portfolio';
 import DailyScribe from './DailyScribe';
 import FrontendProjects from './FrontendProjects';
 import FullStackProjects from './FullStackProjects';
-
+import BillSplitter from './BillSplitter';
 function App() {
 
   const navigation = (path) => {
@@ -64,6 +64,7 @@ function App() {
           <Route path="/fullstack/dailyscribe" element={<DailyScribe />} />
           <Route path="/frontend" element={<FrontendProjects />} />
           <Route path="/fullstack" element={<FullStackProjects />} />
+          <Route path="/frontend/billSplitter" element={<BillSplitter />} />
         </Routes>
       </div>
       <div className='footer flex justify-center items-center flex-col gap-0.5'>
