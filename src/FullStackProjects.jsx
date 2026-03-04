@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-function HomePage() {
+function FullStackProjects() {
     const navigation = useNavigate();
 
     return (
@@ -13,11 +13,9 @@ function HomePage() {
                 <Typewriter
                     options={{
                         strings: [
-                            "Welcome to ProjectPedia.",
-                            "A showcase of my coding projects and experiments.",
-                            "Explore Frontend and Full Stack applications I've built.",
-                            "Each project reflects my learning and problem-solving journey.",
-                            "Let’s turn ideas into real-world applications together!"
+                            "Welcome to Full Stack Projects.",
+                            "A showcase of my full stack projects and experiments.",
+                            "Explore Full Stack applications I've built.",
                         ],
                         autoStart: true,
                         loop: true,
@@ -62,16 +60,16 @@ function HomePage() {
 
                 <div className="box">
                     <h2>
-                        <i className="fa-solid fa-laptop-code me-2"></i>
-                        Portfolio
+                        <i className="fa-solid fa-book-open me-2"></i>
+                        DailyScribe
                     </h2>
                     <p className="text-gray-600 font-bold">
-                        A portfolio website to showcase your work and skills, featuring project
-                        galleries, smooth navigation, responsive design, and optimized performance
-                        for all devices.
+                        A daily journal app for writing and organizing your daily thoughts and
+                        experiences with features like date-based organization, secure data storage,
+                        and a clean, responsive UI for better journaling.
                     </p>
-                    <Button variant="dark" onClick={() => navigation("/frontend/portfolio")}>
-                        Portfolio Project
+                    <Button variant="dark" onClick={() => navigation("/fullStack/dailyscribe")}>
+                        DailyScribe Project
                     </Button>
                 </div>
 
@@ -80,4 +78,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default FullStackProjects;

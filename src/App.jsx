@@ -12,6 +12,11 @@ import { FaGithub, FaLink } from "react-icons/fa";
 import Expensify from './Expensify'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Portfolio from './Portfolio';
+import DailyScribe from './DailyScribe';
+import FrontendProjects from './FrontendProjects';
+import FullStackProjects from './FullStackProjects';
+
 function App() {
 
   const navigation = (path) => {
@@ -55,9 +60,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/fullstack/expensify" element={<Expensify />} />
-          {/* <Route path="/frontend" element={<Frontend />} />
-        <Route path="/fullstack" element={<FullStack />} />
-        <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/frontend/portfolio" element={<Portfolio />} />
+          <Route path="/fullstack/dailyscribe" element={<DailyScribe />} />
+          <Route path="/frontend" element={<FrontendProjects />} />
+          <Route path="/fullstack" element={<FullStackProjects />} />
         </Routes>
       </div>
       <div className='footer flex justify-center items-center flex-col gap-0.5'>

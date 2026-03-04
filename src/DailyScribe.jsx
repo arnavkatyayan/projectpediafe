@@ -1,11 +1,11 @@
 import React from "react";
 import ReusableComponent from "./ReusableComponent";
-import Expensify01 from "./assets/Expensify2025-01.png";
-import Expensify02 from "./assets/Expensify2025-02.png";
-import Expensify03 from "./assets/Expensify2025-03.png";
-import Expensify04 from "./assets/Expensify2025-04.png";
+import DailyScribe01 from "./assets/DailyScribe01.png";
+import DailyScribe02 from "./assets/DailyScribe02.png";
+import DailyScribe03 from "./assets/DailyScribe03.png";
+import DailyScribe04 from "./assets/DailyScribe04.png";
 
-function Expensify() {
+function DailyScribe() {
 
     const data = {
         title: "Expensify",
@@ -23,10 +23,10 @@ function Expensify() {
             "Search and filter expenses by category or date"
         ],
         images: [
-            Expensify01,
-            Expensify02,
-            Expensify03,
-            Expensify04,
+            DailyScribe01,
+            DailyScribe02,
+            DailyScribe03,
+            DailyScribe04,
         ],
         imgDetails: [
             "Login Page",
@@ -50,4 +50,4 @@ function Expensify() {
     );
 }
 
-export default Expensify;   
+export default DailyScribe;   

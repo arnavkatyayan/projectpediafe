@@ -39,36 +39,52 @@ function ReusableComponent(props) {
                     <li className="border rounded-lg p-4">
                         <h2 className="font-bold text-gray-700 mb-2">Backend</h2>
                         <ul>
-                            {props.techStack.Backend.map((feature, index) => (
-                                <li key={index} className="text-gray-600">{feature}</li>
-                            ))}
+                            {props.techStack.Backend && props.techStack.Backend.length > 0 ? (
+                                props.techStack.Backend.map((feature, index) => (
+                                    <li key={index} className="text-gray-600">{feature}</li>
+                                ))
+                            ) : (
+                                <li className="text-gray-600">No Backend</li>
+                            )}
                         </ul>
                     </li>
 
                     <li className="border rounded-lg p-4">
                         <h2 className="font-bold text-gray-700 mb-2">Database</h2>
                         <ul>
-                            {props.techStack.Database.map((feature, index) => (
-                                <li key={index} className="text-gray-600">{feature}</li>
-                            ))}
+                            {props.techStack.Database && props.techStack.Database.length > 0 ? (
+                                props.techStack.Database.map((feature, index) => (
+                                    <li key={index} className="text-gray-600">{feature}</li>
+                                ))
+                            ) : (
+                                <li className="text-gray-600">No Database</li>
+                            )}
                         </ul>
                     </li>
 
                     <li className="border rounded-lg p-4">
                         <h2 className="font-bold text-gray-700 mb-2">Tools</h2>
                         <ul>
-                            {props.techStack.Tools.map((feature, index) => (
-                                <li key={index} className="text-gray-600">{feature}</li>
-                            ))}
+                            {props.techStack.Tools && props.techStack.Tools.length > 0 ? (
+                                props.techStack.Tools.map((feature, index) => (
+                                    <li key={index} className="text-gray-600">{feature}</li>
+                                ))
+                            ) : (
+                                <li className="text-gray-600">No Tools</li>
+                            )}
                         </ul>
                     </li>
 
                     <li className="border rounded-lg p-4">
                         <h2 className="font-bold text-gray-700 mb-2">Libraries</h2>
                         <ul>
-                            {props.techStack.Libraries.map((feature, index) => (
-                                <li key={index} className="text-gray-600">{feature}</li>
-                            ))}
+                            {props.techStack.Libraries && props.techStack.Libraries.length > 0 ? (
+                                props.techStack.Libraries.map((feature, index) => (
+                                    <li key={index} className="text-gray-600">{feature}</li>
+                                ))
+                            ) : (
+                                <li className="text-gray-600">No Libraries</li>
+                            )}
                         </ul>
                     </li>
 

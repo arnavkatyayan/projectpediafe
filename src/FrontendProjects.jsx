@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-function HomePage() {
+function FrontendProjects() {
     const navigation = useNavigate();
 
     return (
@@ -13,11 +13,11 @@ function HomePage() {
                 <Typewriter
                     options={{
                         strings: [
-                            "Welcome to ProjectPedia.",
-                            "A showcase of my coding projects and experiments.",
-                            "Explore Frontend and Full Stack applications I've built.",
+                            "Welcome to Frontend Projects.",
+                            "A showcase of my frontend projects.",
+                            "Explore Frontend applications I've built.",
                             "Each project reflects my learning and problem-solving journey.",
-                            "Let’s turn ideas into real-world applications together!"
+                            "Crafting interactive and responsive user interfaces."
                         ],
                         autoStart: true,
                         loop: true,
@@ -32,31 +32,31 @@ function HomePage() {
 
                 <div className="box">
                     <h2>
-                        <i className="fa-solid fa-list-check me-2"></i>
-                        FlexBoard
+                        <i className="fa-solid fa-coins me-2"></i>
+                        BillSplitter
                     </h2>
                     <p className="text-gray-600 font-bold">
-                        A todo app for managing your tasks and deadlines with priority-based task
-                        organization, due date reminders, and a clean, responsive UI for better
-                        productivity.
+                        A bill splitter app for splitting bills among friends and family with
+                        easy bill splitting, group bill splitting, and a clean, responsive UI for better
+                        bill splitting.
                     </p>
-                    <Button variant="dark" onClick={() => navigation("/fullStack/Flexboard")}>
-                        FlexBoard Project
+                    <Button variant="dark" onClick={() => navigation("/frontend/billsplitter")}>
+                        BillSplitter Project
                     </Button>
                 </div>
 
                 <div className="box">
                     <h2>
-                        <i className="fa-solid fa-wallet me-2"></i>
-                        Expensify
+                        <i className="fa-solid fa-folder-open me-2"></i>
+                        ProjectPedia
                     </h2>
                     <p className="text-gray-600 font-bold">
-                        An expense tracker to keep track of your expenses with categorized spending,
-                        monthly summaries, visual charts, and secure data storage for personal
-                        finance management.
+                        A project showcase website to showcase your projects and skills, featuring
+                        project galleries, smooth navigation, responsive design, and optimized
+                        performance for all devices.
                     </p>
-                    <Button variant="dark" onClick={() => navigation("/fullStack/expensify")}>
-                        Expensify Project
+                    <Button variant="dark" onClick={() => navigation("/frontend/projectpedia")}>
+                        ProjectPedia Project
                     </Button>
                 </div>
 
@@ -80,4 +80,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default FrontendProjects;
