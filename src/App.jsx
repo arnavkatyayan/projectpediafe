@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Logo from './assets/Logo.jpg'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import HomePage from './HomePage'
 import { Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,25 +17,35 @@ import DailyScribe from './DailyScribe';
 import FrontendProjects from './FrontendProjects';
 import FullStackProjects from './FullStackProjects';
 import BillSplitter from './BillSplitter';
-function App() {
 
+function App() {
+  const [isHomeClicked, setIsHomeClicked] = useState(false);
+  const [isProjectsClicked, setIsProjectsClicked] = useState(false);
+  const navigate = useNavigate();
   const navigation = (path) => {
-    window.location.href = path;
+    navigate(path);
+    if (path === "/") {
+      setIsHomeClicked(true);
+      setIsProjectsClicked(false);
+    } else if (path === "/frontend" || path === "/fullstack") {
+      setIsHomeClicked(false);
+      setIsProjectsClicked(true);
+    }
   }
   return (
-    <Router>
+    <>
       <div className='header'>
         <div className='flex'>
           <img src={Logo} alt="Projectpedia Logo" className='logo' />
           <h1 className='title'>ProjectPedia</h1>
         </div>
         <div className='flex nav justify-center items-center gap-5'>
-          <p onClick={() => navigation("/")}>Home</p>
+          <p onClick={() => navigation("/")} className={isHomeClicked ? "text-white" : "text-grey-600"}>Home</p>
           <div className="dropdown">
-            <p className="dropbtn">Projects</p>
+            <p className={`dropdownbtn ${isProjectsClicked ? "text-white" : "text-grey-600"}`}>Projects</p>
             <div className="dropdown-content">
-              <p onClick={() => navigation("/frontend")}>Frontend</p>
-              <p onClick={() => navigation("/fullstack")}>Full Stack</p>
+              <p onClick={() => navigation("/frontend")}>Frontend Projects</p>
+              <p onClick={() => navigation("/fullstack")}>Full Stack Projects</p>
 
             </div>
           </div>
@@ -71,7 +81,7 @@ function App() {
         <p className='font-bold'>Version: 1.0.0</p>
         <p className='font-medium'>© 2026 ProjectPedia. All rights reserved.</p>
       </div>
-    </Router>
+    </>
   )
 }
 

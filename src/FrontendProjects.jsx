@@ -45,7 +45,7 @@ function FrontendProjects() {
                     </Button>
                 </div>
 
-                <div className="box">
+                {/* <div className="box">
                     <h2>
                         <i className="fa-solid fa-folder-open me-2"></i>
                         ProjectPedia
@@ -58,7 +58,7 @@ function FrontendProjects() {
                     <Button variant="dark" onClick={() => navigation("/frontend/projectpedia")}>
                         ProjectPedia Project
                     </Button>
-                </div>
+                </div> */}
 
                 <div className="box">
                     <h2>

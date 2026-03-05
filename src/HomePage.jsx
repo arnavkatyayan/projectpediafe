@@ -9,7 +9,7 @@ function HomePage() {
     return (
         <div className="body-page flex justify-center items-center flex-col">
 
-            <div className="typewriter">
+            <div className="typewriter-home">
                 <Typewriter
                     options={{
                         strings: [
@@ -28,7 +28,7 @@ function HomePage() {
                 />
             </div>
 
-            <div className="flex items-center justify-center gap-6 featured-projects">
+            {/* <div className="flex items-center justify-center gap-6 featured-projects">
 
                 <div className="box">
                     <h2>
@@ -75,7 +75,7 @@ function HomePage() {
                     </Button>
                 </div>
 
-            </div>
+            </div> */}
         </div>
     );
 }

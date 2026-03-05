@@ -91,13 +91,14 @@
   display: none;
   position: absolute;
   top: 25px;
-  left: 0;
+  left: -61px;
   background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 8px 0;
-  min-width: 120px;
+  min-width: 170px;
   z-index: 999;
+  width: 165px;
 }
 
 .dropdown-content p {
@@ -168,6 +169,15 @@
   font-weight: 600;
   position: absolute;
   top: 10vh;
+  font-family: auto;
+}
+
+.typewriter-home {
+  color: lightgrey;
+  font-size: xxx-large;
+  font-weight: 700;
+  position: absolute;
+  top: 34vh;
   font-family: auto;
 }
 
