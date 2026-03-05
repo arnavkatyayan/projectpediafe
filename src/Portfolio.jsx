@@ -15,6 +15,7 @@ function Portfolio() {
 
         buttonText: "Portfolio Project",
         buttonLink: "/fullStack/portfolio",
+        icon: "fa-user",
 
         features: [
             "Showcases frontend and full-stack projects",

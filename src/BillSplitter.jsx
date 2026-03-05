@@ -11,7 +11,7 @@ function BillSplitter() {
         description: "BillSplitter is a full-stack bill splitting application designed to help users split bills efficiently. It allows users to add, edit, and delete bills, view monthly summaries, and analyze spending patterns through interactive charts. The application ensures secure data storage and provides an intuitive, responsive interface for seamless personal finance management.",
         buttonText: "BillSplitter Project",
         buttonLink: "/fullStack/billSplitter",
-
+        icon: "fa-list-check",
         features: [
             "Simple Application to create and split bills",
             "Fully responsive UI",

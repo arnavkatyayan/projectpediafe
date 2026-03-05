@@ -12,7 +12,7 @@ function Expensify() {
         description: "Expensify is a full-stack expense tracking application designed to help users manage their finances efficiently. It allows users to record and categorize expenses, view monthly summaries, and analyze spending patterns through interactive charts. The application ensures secure data storage and provides an intuitive, responsive interface for seamless personal finance management.",
         buttonText: "Expensify Project",
         buttonLink: "/fullStack/expensify",
-
+        icon: "fa-money-bill-wave",
         features: [
             "Add, edit, and delete expenses",
             "Categorize expenses for better tracking",

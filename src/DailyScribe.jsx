@@ -8,19 +8,18 @@ import DailyScribe04 from "./assets/DailyScribe04.png";
 function DailyScribe() {
 
     const data = {
-        title: "Expensify",
-        description: "Expensify is a full-stack expense tracking application designed to help users manage their finances efficiently. It allows users to record and categorize expenses, view monthly summaries, and analyze spending patterns through interactive charts. The application ensures secure data storage and provides an intuitive, responsive interface for seamless personal finance management.",
-        buttonText: "Expensify Project",
-        buttonLink: "/fullStack/expensify",
-
+        title: "Daily Scribe",
+        description: "Daily Scribe is a full-stack journaling application that allows users to write, manage, and organize their daily thoughts and experiences in a secure digital journal. The application provides features such as creating, editing, and deleting journal entries, searching past entries, and filtering notes based on emotions or keywords. With secure authentication, encrypted data handling, and a clean responsive interface, Daily Scribe offers a safe and intuitive space for users to reflect on their daily lives.",
+        buttonText: "Daily Scribe Project",
+        buttonLink: "/fullStack/dailyScribe",
+        icon: "fa-book-open",
         features: [
-            "Add, edit, and delete expenses",
-            "Categorize expenses for better tracking",
-            "Monthly and yearly expense summaries",
-            "Interactive charts for spending analysis",
-            "Secure user authentication and data storage",
-            "Responsive design for mobile and desktop",
-            "Search and filter expenses by category or date"
+            "Create, edit, and delete daily journal entries",
+            "Search past entries quickly",
+            "Emotion-based journal filtering",
+            "Secure user authentication",
+            "PDF export for journal backup",
+            "Encrypted storage for personal data safety",
         ],
         images: [
             DailyScribe01,
@@ -30,17 +29,17 @@ function DailyScribe() {
         ],
         imgDetails: [
             "Login Page",
-            "Project Dashboard",
-            "Income Dashboard",
-            "Expense Dashboard"
+            "Journal Dashboard",
+            "Write New Entry",
+            "Journal History View"
         ]
     };
     const techStack = {
-        Frontend: ["ReactJS", "Vanilla CSS", "Bootstrap", "Tailwind CSS"],
-        Backend: ["Java", "Spring Boot", "Hibernate", "Python", "Pandas"],
+        Frontend: ["ReactJS", "Vanilla CSS", "Bootstrap",],
+        Backend: ["Java", "Spring Boot", "Hibernate"],
         Database: ["PostgreSQL"],
         Tools: ["Git", "GitHub"],
-        Libraries: ["react-charts", "react-router-dom", "SweetAlert2"],
+        Libraries: ["react-router-dom", "SweetAlert2", "Typewriter-effect"],
     }
 
     return (

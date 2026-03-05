@@ -38,7 +38,7 @@ function FullStackProjects() {
                         organization, due date reminders, and a clean, responsive UI for better
                         productivity.
                     </p>
-                    <Button variant="dark" onClick={() => navigation("/fullStack/Flexboard")}>
+                    <Button variant="dark" onClick={() => navigation("/fullStack/flexboard")}>
                         FlexBoard Project
                     </Button>
                 </div>

@@ -17,8 +17,12 @@ import DailyScribe from './DailyScribe';
 import FrontendProjects from './FrontendProjects';
 import FullStackProjects from './FullStackProjects';
 import BillSplitter from './BillSplitter';
+import FlexBoard from './FlexBoard';
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeProvider';
 
 function App() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [isHomeClicked, setIsHomeClicked] = useState(false);
   const [isProjectsClicked, setIsProjectsClicked] = useState(false);
   const navigate = useNavigate();
@@ -34,10 +38,13 @@ function App() {
   }
   return (
     <>
-      <div className='header'>
+      <div className={`header ${theme === "dark" ? "dark-mode" : "light-mode"}`}>
         <div className='flex'>
-          <img src={Logo} alt="Projectpedia Logo" className='logo' />
-          <h1 className='title'>ProjectPedia</h1>
+          <img src={Logo} alt="Projectpedia Logo" className='logo cursor-pointer' onClick={() => navigation("/")} />
+          <h1 className='title cursor-pointer' onClick={() => navigation("/")}>ProjectPedia</h1>
+          {/* <Button variant="dark" onClick={toggleTheme}>
+            {theme === "dark" ? "light" : "dark"}
+          </Button> */}
         </div>
         <div className='flex nav justify-center items-center gap-5'>
           <p onClick={() => navigation("/")} className={isHomeClicked ? "text-white" : "text-grey-600"}>Home</p>
@@ -75,6 +82,7 @@ function App() {
           <Route path="/frontend" element={<FrontendProjects />} />
           <Route path="/fullstack" element={<FullStackProjects />} />
           <Route path="/frontend/billSplitter" element={<BillSplitter />} />
+          <Route path="/fullstack/flexboard" element={<FlexBoard />} />
         </Routes>
       </div>
       <div className='footer flex justify-center items-center flex-col gap-0.5'>

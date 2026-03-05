@@ -1,8 +1,8 @@
 import React from "react";
 import ReusableComponent from "./ReusableComponent";
-import FlexBoard01 from "./assets/Expensify2025-01.png";
-import FlexBoard02 from "./assets/Expensify2025-02.png";
-import FlexBoard03 from "./assets/Expensify2025-03.png";
+import FlexBoard01 from "./assets/FlexBoard01.png";
+import FlexBoard02 from "./assets/FlexBoard02.png";
+import FlexBoard03 from "./assets/FlexBoard03.png";
 //import FlexBoard04 from "./assets/Expensify2025-04.png";
 
 function FlexBoard() {
@@ -22,11 +22,11 @@ function FlexBoard() {
             "Responsive design for mobile and desktop",
             "Search and filter tasks by category or date"
         ],
+        icon: "fa-list-check",
         images: [
-            Expensify01,
-            Expensify02,
-            Expensify03,
-            Expensify04,
+            FlexBoard01,
+            FlexBoard02,
+            FlexBoard03,
         ],
         imgDetails: [
             "Login Page",
@@ -49,4 +49,4 @@ function FlexBoard() {
     );
 }
 
-export default Expensify;   
+export default FlexBoard;   
