@@ -54,9 +54,9 @@ function App() {
           </div>
         </div>
         <div className='flex items-center gap-4 md:gap-6 flex-wrap justify-center font-semibold'>
-          <p onClick={() => navigation("/")} className={`cursor-pointer m-0 transition-colors ${isHomeClicked ? "text-blue-500" : "text-gray-600 dark:text-gray-300"} hover:text-blue-400`}>Home</p>
+          <p onClick={() => navigation("/")} className={`cursor-pointer m-0 transition-colors ${isHomeClicked ? "text-blue-500" : (theme === "dark" ? "text-white" : "text-gray-600")} hover:text-blue-400`}>Home</p>
           <div className="relative group">
-            <p className={`cursor-pointer py-2 m-0 transition-colors ${isProjectsClicked ? "text-blue-500" : "text-gray-600 dark:text-gray-300"} hover:text-blue-400`}>Projects</p>
+            <p className={`cursor-pointer py-2 m-0 transition-colors ${isProjectsClicked ? "text-blue-500" : (theme === "dark" ? "text-white" : "text-gray-600")} hover:text-blue-400`}>Projects</p>
             <div className="hidden group-hover:block absolute top-full left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 pt-1 z-50">
               <div className="bg-white shadow-xl rounded-lg py-2 min-w-[200px] border border-gray-100">
                 <p className="cursor-pointer hover:bg-gray-100 text-gray-800 px-4 py-2 m-0 transition-colors" onClick={() => navigation("/frontend")}>Frontend Projects</p>

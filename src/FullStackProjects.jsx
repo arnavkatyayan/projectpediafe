@@ -64,7 +64,7 @@ function FullStackProjects() {
                         DailyScribe
                     </h2>
                     <p className="text-gray-600 font-bold">
-                        A daily journal app for writing and organizing your daily thoughts and
+                        A daily journal app for writing your daily thoughts and
                         experiences with features like date-based organization, secure data storage,
                         and a clean, responsive UI for better journaling.
                     </p>
