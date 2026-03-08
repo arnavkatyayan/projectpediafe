@@ -7,7 +7,7 @@ function FullStackProjects() {
     const navigation = useNavigate();
 
     return (
-        <div className="body-page flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col">
 
             <div className="typewriter">
                 <Typewriter

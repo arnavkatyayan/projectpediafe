@@ -28,14 +28,14 @@ function ReusableComponent(props) {
                 </ul>
             </div>
             <div className="tech-stack">
-                <ul className="flex gap-5 justify-center items-center">
+                <ul className="flex gap-5 justify-center items-center flex-wrap w-full">
 
                     <li className="border rounded-lg p-4 box box2">
                         <div className="flex gap-2 items-center justify-center">
                             <i className="fa-solid fa-code"></i>
                             <h2 className="font-bold text-gray-700 mb-2">Frontend</h2>
                         </div>
-                        <ul style={{ marginRight: "42px" }}>
+                        <ul className="mt-2 text-center md:text-left">
                             {props.techStack.Frontend.map((feature, index) => (
                                 <li key={index} className="text-gray-600 font-bold">{feature}</li>
                             ))}
@@ -47,7 +47,7 @@ function ReusableComponent(props) {
                             <i className="fa-solid fa-server"></i>
                             <h2 className="font-bold text-gray-700 mb-2">Backend</h2>
                         </div>
-                        <ul style={{ marginRight: "42px" }}>
+                        <ul className="mt-2 text-center md:text-left">
                             {props.techStack.Backend && props.techStack.Backend.length > 0 ? (
                                 props.techStack.Backend.map((feature, index) => (
                                     <li key={index} className="text-gray-600 font-bold">{feature}</li>
@@ -63,7 +63,7 @@ function ReusableComponent(props) {
                             <i className="fa-solid fa-database"></i>
                             <h2 className="font-bold text-gray-700 mb-2">Database</h2>
                         </div>
-                        <ul style={{ marginRight: "42px" }}>
+                        <ul className="mt-2 text-center md:text-left">
                             {props.techStack.Database && props.techStack.Database.length > 0 ? (
                                 props.techStack.Database.map((feature, index) => (
                                     <li key={index} className="text-gray-600 font-bold">{feature}</li>
@@ -79,7 +79,7 @@ function ReusableComponent(props) {
                             <i className="fa-solid fa-tools"></i>
                             <h2 className="font-bold text-gray-700 mb-2">Tools</h2>
                         </div>
-                        <ul style={{ marginRight: "42px" }}>
+                        <ul className="mt-2 text-center md:text-left">
                             {props.techStack.Tools && props.techStack.Tools.length > 0 ? (
                                 props.techStack.Tools.map((feature, index) => (
                                     <li key={index} className="text-gray-600 font-bold">{feature}</li>
@@ -95,7 +95,7 @@ function ReusableComponent(props) {
                             <i className="fa-solid fa-book"></i>
                             <h2 className="font-bold text-gray-700 mb-2">Libraries</h2>
                         </div>
-                        <ul style={{ marginRight: "42px" }}>
+                        <ul className="mt-2 text-center md:text-left">
                             {props.techStack.Libraries && props.techStack.Libraries.length > 0 ? (
                                 props.techStack.Libraries.map((feature, index) => (
                                     <li key={index} className="text-gray-600 font-bold">{feature}</li>
