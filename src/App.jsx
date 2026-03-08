@@ -66,13 +66,13 @@ function App() {
           </div>
           <p
             onClick={() => window.open("https://visualresumearnavk2025.vercel.app/", "_blank")}
-            className='flex items-center justify-center gap-2 rounded-full px-6 min-w-[130px] shadow-sm'
+            className='flex items-center justify-center gap-2 rounded-full mt-3 px-6 min-w-[130px] shadow-sm cursor-pointer'
           >
             <FaLink size={16} /> <span className="hidden sm:inline">Portfolio</span>
           </p>
           <p
             onClick={() => window.open("https://github.com/arnavkatyayan", "_blank")}
-            className='flex items-center justify-center gap-2 rounded-full px-6 min-w-[130px] shadow-sm'
+            className='flex items-center justify-center gap-2 rounded-full mt-3 px-6 min-w-[130px] shadow-sm cursor-pointer'
           >
             <FaGithub size={16} /> <span className="hidden sm:inline">GitHub</span>
           </p>

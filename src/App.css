@@ -141,3 +141,9 @@
 .btn-icons {
   margin-right: 0.5rem;
 }
+
+.skill-dimension {
+  position: relative;
+  top: -39px;
+  right: 10px;
+}
