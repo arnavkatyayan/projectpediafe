@@ -42,7 +42,7 @@ function App() {
         <div className='flex items-center gap-3 md:gap-4 flex-wrap justify-center'>
           <img src={Logo} alt="Projectpedia Logo" className='w-12 h-12 md:w-16 md:h-16 rounded-full cursor-pointer transition-transform hover:scale-105 shadow-sm' onClick={() => navigation("/")} />
           <h1 className='text-2xl md:text-3xl font-bold cursor-pointer m-0' onClick={() => navigation("/")}>ProjectPedia</h1>
-          <div className="flex items-center gap-2 ml-2">
+          <div className="flex items-center gap-2 ml-2 mt-2">
             <Switch checked={theme === "dark"} onChange={toggleTheme} label="Toggle Theme" className='cursor-pointer' />
             <p className="font-bold m-0 flex items-center">
               {theme === "dark" ? (
@@ -66,13 +66,13 @@ function App() {
           </div>
           <p
             onClick={() => window.open("https://visualresumearnavk2025.vercel.app/", "_blank")}
-            className='flex items-center justify-center gap-2 rounded-full mt-3 px-6 min-w-[130px] shadow-sm cursor-pointer'
+            className='flex items-center justify-center gap-2 rounded-full mt-3 px-6 min-w-[130px] shadow-sm cursor-pointer border-2 hover:border-2 hover:border-blue-500'
           >
             <FaLink size={16} /> <span className="hidden sm:inline">Portfolio</span>
           </p>
           <p
             onClick={() => window.open("https://github.com/arnavkatyayan", "_blank")}
-            className='flex items-center justify-center gap-2 rounded-full mt-3 px-6 min-w-[130px] shadow-sm cursor-pointer'
+            className='flex items-center justify-center gap-2 rounded-full mt-3 px-6 min-w-[130px] shadow-sm cursor-pointer border-2 hover:border-2 hover:border-blue-500'
           >
             <FaGithub size={16} /> <span className="hidden sm:inline">GitHub</span>
           </p>
