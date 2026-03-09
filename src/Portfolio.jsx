@@ -40,6 +40,7 @@ function Portfolio() {
             "Projects Section",
             "Contact Section with dark mode",
         ],
+        githubLink: "https://github.com/arnavkatyayan/visualresumearnavk2025",
     };
 
     const techStack = {

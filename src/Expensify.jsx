@@ -33,7 +33,8 @@ function Expensify() {
             "Project Dashboard",
             "Income Dashboard",
             "Expense Dashboard"
-        ]
+        ],
+        githubLink: "https://github.com/arnavkatyayan/Expensify2025",
     };
     const techStack = {
         Frontend: ["ReactJS", "Vanilla CSS", "Bootstrap", "Tailwind CSS"],

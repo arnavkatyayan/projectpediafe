@@ -25,7 +25,8 @@ function BillSplitter() {
         imgDetails: [
             "Initial Load of the Application",
             "Spliting the Bill"
-        ]
+        ],
+        githubLink: "https://github.com/arnavkatyayan/billsplitterproject",
     };
     const techStack = {
         Frontend: ["ReactJS", "Vanilla CSS", "Bootstrap"],

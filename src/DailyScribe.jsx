@@ -32,7 +32,8 @@ function DailyScribe() {
             "Journal Dashboard",
             "Write New Entry",
             "Journal History View"
-        ]
+        ],
+        githubLink: "https://github.com/arnavkatyayan/DailyScribe",
     };
     const techStack = {
         Frontend: ["ReactJS", "Vanilla CSS", "Bootstrap",],

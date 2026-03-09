@@ -26,6 +26,11 @@ function ReusableComponent(props) {
                         <li key={index} className="font-bold text-gray-600">{feature}</li>
                     ))}
                 </ul>
+                <div className="flex gap-5 justify-center items-center">
+                    <Button variant="dark" onClick={() => window.open(props.data.githubLink, "_blank")}>
+                        Open  GitHub
+                    </Button>
+                </div>
             </div>
             <div className="tech-stack">
                 <ul className="flex gap-5 justify-center items-center flex-wrap w-full">

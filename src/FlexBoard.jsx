@@ -32,7 +32,8 @@ function FlexBoard() {
             "Login Page",
             "Project Dashboard",
             "Income Dashboard",
-        ]
+        ],
+        githubLink: "http://github.com/arnavkatyayan/FlexBoardApp",
     };
     const techStack = {
         Frontend: ["ReactJS", "Vanilla CSS", "Bootstrap"],
