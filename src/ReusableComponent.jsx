@@ -116,7 +116,7 @@ function ReusableComponent(props) {
 
             <div className="project-images">
                 <img src={imageArr[currentImage]} alt="Project" className="image-dimensions" />
-                <p className="text-center font-bold text-gray-200 text-2xl mt-2">({props.data.imgDetails[currentImage]})</p>
+                <p className="text-center font-bold text-2xl mt-2">({props.data.imgDetails[currentImage]})</p>
                 <div className="flex gap-5 justify-center items-center button-dimensions">
                     <Button onClick={handlePrev} variant="dark">Prev</Button>
                     <Button onClick={handleNext} variant="dark">Next</Button>

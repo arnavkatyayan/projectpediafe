@@ -46,9 +46,9 @@ function App() {
             <Switch checked={theme === "dark"} onChange={toggleTheme} label="Toggle Theme" className='cursor-pointer' />
             <p className="font-bold m-0 flex items-center">
               {theme === "dark" ? (
-                <i className="fa-solid fa-moon text-2xl text-yellow-300"></i>
+                <i className="fa-solid fa-moon text-2xl text-yellow-300 cursor-pointer" onClick={toggleTheme}></i>
               ) : (
-                <i className="fa-solid fa-sun text-2xl text-orange-400"></i>
+                <i className="fa-solid fa-sun text-2xl text-orange-400 cursor-pointer" onClick={toggleTheme}></i>
               )}
             </p>
           </div>
