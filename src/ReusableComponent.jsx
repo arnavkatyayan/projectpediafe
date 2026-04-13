@@ -56,7 +56,7 @@ function ReusableComponent(props) {
                             {props.data?.title}
                         </h1>
 
-                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed whitespace-pre-line">
                             {props.data?.description}
                         </p>
 
@@ -102,7 +102,7 @@ function ReusableComponent(props) {
                                 </div>
 
                                 <div className="bg-gray-900 px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-gray-800">
-                                    <p className="text-gray-200 font-medium text-sm sm:text-base truncate w-full sm:max-w-[50%] flex items-center justify-center sm:justify-start">
+                                    <p className="text-gray-200 font-medium text-sm sm:text-base truncate w-full sm:max-w-[50%] flex items-center justify-center sm:justify-start whitespace-pre-line">
                                         <i className="fa-regular fa-image mr-2 text-indigo-400"></i>
                                         {props.data?.imgDetails && props.data.imgDetails[currentImage]}
                                     </p>
