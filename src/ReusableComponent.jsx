@@ -52,16 +52,16 @@ function ReusableComponent(props) {
                             </span>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900 dark:text-white tracking-tight">
+                        <h1 className="text-4xl md:text-5xl !text-black font-extrabold mb-4 text-gray-900 dark:text-white tracking-tight">
                             {props.data?.title}
                         </h1>
 
-                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed whitespace-pre-line">
+                        <p className="text-lg !text-black dark:text-gray-300 mb-8 leading-relaxed whitespace-pre-line">
                             {props.data?.description}
                         </p>
 
                         <div className="mb-10 p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-900/50 rounded-2xl border border-gray-200/60 dark:border-gray-700/50">
-                            <h3 className="font-bold text-xl mb-5 text-gray-800 dark:text-gray-200 flex items-center gap-2">
+                            <h3 className="font-bold text-xl mb-5 !text-black dark:!text-red-200 flex items-center gap-2">
                                 <i className="fa-solid fa-star text-yellow-500"></i> Key Features
                             </h3>
                             <ul className="space-y-4">
@@ -135,7 +135,7 @@ function ReusableComponent(props) {
 
                         {/* Tech Stack Area */}
                         <div>
-                            <h2 className="text-3xl font-extrabold mb-8 text-gray-900 dark:text-white flex items-center gap-3">
+                            <h2 className="text-3xl font-extrabold mb-8 !text-black dark:text-white flex items-center gap-3">
                                 <span className="text-indigo-500">
                                     <i className="fa-solid fa-layer-group border-2 border-indigo-500 p-2 rounded-lg text-xl"></i>
                                 </span>
@@ -146,7 +146,7 @@ function ReusableComponent(props) {
                                 {renderTechStackPills("Backend", props.techStack?.Backend, "fa-server")}
                                 {renderTechStackPills("Database", props.techStack?.Database, "fa-database")}
                                 {renderTechStackPills("Tools", props.techStack?.Tools, "fa-screwdriver-wrench")}
-                                {renderTechStackPills("Libraries", props.techStack?.Libraries, "fa-book-bookmark")}
+                                {renderTechStackPills("Libraries", props.techStack?.Libraries, "fa-boxes-stacked")}
                             </div>
                         </div>
 
